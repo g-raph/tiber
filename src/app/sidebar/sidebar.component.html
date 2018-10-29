@@ -1,0 +1,173 @@
+
+<div class="sidebar-wrapper">
+    <div class="logo">
+        <a routerLink="/" class="simple-text">
+            <img width="190" src="/assets/img/Boerenbond_logo.png"/>
+        </a>
+    </div>
+        
+    <ul class="nav responsive-nav">
+        <li *ngIf="isMobileMenu()">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-dashboard"></i>
+				<p class="hidden-lg hidden-md">Dashboard</p>
+            </a>
+        </li>
+        <li class="dropdown" *ngIf="isMobileMenu()">
+              <a class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-globe"></i>
+                    <b class="caret hidden-sm hidden-xs"></b>
+                    <span class="notification hidden-sm hidden-xs">5</span>
+					<p class="hidden-lg hidden-md">
+						5 Notifications
+						<b class="caret"></b>
+					</p>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Notification 1</a></li>
+                <li><a href="#">Notification 2</a></li>
+                <li><a href="#">Notification 3</a></li>
+                <li><a href="#">Notification 4</a></li>
+                <li><a href="#">Another notification</a></li>
+              </ul>
+        </li>
+        <li *ngIf="isMobileMenu()">
+           <a>
+                <i class="fa fa-search"></i>
+				<p class="hidden-lg hidden-md">Search</p>
+            </a>
+        </li>
+        <li *ngIf="isMobileMenu()">
+           <a href="">
+               <p>Account</p>
+            </a>
+        </li>
+        <li class="dropdown" *ngIf="isMobileMenu()">
+              <a class="dropdown-toggle" data-toggle="dropdown">
+                    <p>
+    					Dropdown
+    					<b class="caret"></b>
+    				</p>
+
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+        </li>
+        <li *ngIf="isMobileMenu()">
+            <a>
+                <p>Log out</p>
+            </a>
+        </li>
+        <li class="separator hidden-lg hidden-md" *ngIf="isMobileMenu()"></li>
+
+        <li>
+            <a><i class="pe-7s-home"></i> <p>Bedrijf</p></a>
+            <ul class="submenu">
+              <li><a href="https://google.be" class="menulink">Snelle invoer facturen</a></li>
+              <li><a href="https://google.be" class="menulink">Investeringen</a></li>
+              <li><a href="https://google.be" class="menulink">Loonwerk</a></li>
+              <li><a href="https://google.be" class="menulink">Seizoenslonen</a></li>
+              <li><a href="https://google.be" class="menulink">Energie</a></li>
+              <li><a href="https://google.be" class="menulink">Diversie uitgaven</a></li>
+              <li><a href="https://google.be" class="menulink">Verzekeringen</a></li>
+              <li><a href="https://google.be" class="menulink">Premies</a></li>
+              <li><a href="https://google.be" class="menulink">Diverse opbrengsten</a></li>
+              <li><a href="https://google.be" class="menulink">Leningen</a></li>
+              <li><a href="https://google.be" class="menulink">Stand urentellers</a></li>
+              <li><a href="https://google.be" class="menulink">Aandelen coöperaties</a></li>
+              <li><a href="https://google.be" class="menulink">Arbeidskrachten</a></li>
+              <li><a href="https://google.be" class="menulink">Eigen verdeelsleutels</a></li>
+            </ul>
+          </li>
+          <li>
+            <a><i class="pe-7s-bicycle"></i> <p>Activiteit</p></a>
+            <ul class="submenu">
+              <li>
+                <p>Vee</p>
+                <ul class="submenu">
+                  <li><a href="https://google.be" class="menulink">Bedrijfskeuzes vee</a></li>
+                  <li><a href="https://google.be" class="menulink">Ruwvoeders</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>Teelten</p>
+                <ul class="submenu">
+                  <li><a href="https://google.be" class="menulink">Bedrijfskeuzes teelten</a></li>
+                  <li><a href="https://google.be" class="menulink">Percelen</a></li>
+                  <li><a href="https://google.be" class="menulink">Teeltplannen</a></li>
+                  <li><a href="https://google.be" class="menulink">Beplantingen</a></li>
+                  <li><a href="https://google.be" class="menulink">Zaai-, poot-, en plantgoed</a></li>
+                  <li><a href="https://google.be" class="menulink">Gewasbescherming</a></li>
+                  <li><a href="https://google.be" class="menulink">Kunstmest</a></li>
+                  <li><a href="https://google.be" class="menulink">Kalk</a></li>
+                  <li><a href="https://google.be" class="menulink">Organische mest</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>Nevenactiviteit</p>
+                <ul class="submenu">
+                  <li><a href="https://google.be" class="menulink">Bedrijfskeuze nevenactiviteiten</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li *ngIf="adminView">
+            <a><i class="pe-7s-config"></i> <p>Beheer</p></a>
+            <ul class="submenu">
+              <li><a href="https://google.be" class="menulink">Snelle invoer facturen</a></li>
+              <li><a href="https://google.be" class="menulink">Validaties algemeen</a></li>
+              <li><a href="https://google.be" class="menulink">Bedrijfsuitslag aanmaken</a></li>
+              <li><a href="https://google.be" class="menulink">Validaties marktbare teelten</a></li>
+              <li><a href="https://google.be" class="menulink">Beheer beplantingen</a></li>
+              <li><a href="https://google.be" class="menulink">Machinetabel</a></li>
+            </ul>
+          </li>
+          <div class="adminviewbtn" (click)="setAdminView()" [ngClass]="{'active': adminView}"><input type="checkbox" [checked]="adminView"> Admin view</div>
+
+          <li class="active-pro">
+            <div class="nodropdown"><a routerLink="/user"><i class="pe-7s-user"></i></a></div>
+            <div class="dropup">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="pe-7s-global"></i>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Nederlands</a></li>
+                  <li><a href="#">Français</a></li>
+                  <li><a href="#">Deutsch</a></li>
+                  <li><a href="#">English</a></li>
+              </ul>
+          </div>
+          <div class="dropup">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="pe-7s-bell"></i>
+                  <span class="notification hidden-sm hidden-xs">5</span>
+                  <p class="hidden-lg hidden-md">
+                      5 Notifications
+                      <b class="caret"></b>
+                  </p>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Notification 1</a></li>
+                  <li><a href="#">Notification 2</a></li>
+                  <li><a href="#">Notification 3</a></li>
+                  <li><a href="#">Notification 4</a></li>
+                  <li><a href="#">Another notification</a></li>
+              </ul>
+            </div>
+          </li>
+        <!-- <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
+            <a  [routerLink]="[menuItem.path]">
+                <i class="{{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li> -->
+    </ul>
+</div>

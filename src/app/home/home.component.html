@@ -1,0 +1,496 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card secondary">
+                    <div class="header">
+                        <h4 class="title">Kasstroom</h4>
+                        <p class="category">Hier een subtitel</p>
+                    </div>
+                    <div class="content">
+                        <span>dcbkqdbckqc</span>
+                        <div class="footer">
+                            iqciqdbciqbciqdc
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Leningen</h4>
+                        <p class="category">Hier een subtitel</p>
+                    </div>
+                    <div class="content">
+                        <span>dcbkqdbckqc</span>
+                        <div class="footer">
+                            iqciqdbciqbciqdc
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card primary">
+                    <div class="header">
+                        <h4 class="title">Beplantingen</h4>
+                        <p class="category">Hier een subtitel</p>
+                    </div>
+                    <div class="content">
+                        <span>dcbkqdbckqc</span>
+                        <div class="footer">
+                            iqciqdbciqbciqdc
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Investeringen</h4>
+                        <p class="category">Hier een subtitel</p>
+                    </div>
+                    <div class="content">
+                        <span>dcbkqdbckqc</span>
+                        <div class="footer">
+                            iqciqdbciqbciqdc
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row tabs">
+            <div class="col-md-12">
+                <ngb-tabset type="pills" [orientation]="vertical">
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <strong>Tabtitel 1</strong>
+                            <small>Een beetje uitleg hier</small>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <lbd-chart [title]="'Overzicht teelten'" [subtitle]="'All products including Taxes'" [chartType]="activityChartType"
+                                [chartData]="activityChartData" [chartOptions]="activityChartOptions" [chartResponsive]="activityChartResponsive"
+                                [withHr]="true">
+                            </lbd-chart>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <strong>Tabtitel 2</strong>
+                            <small>Een beetje uitleg hier</small>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <lbd-chart [title]="'Overzicht vee'" [subtitle]="'24 Hours performance'" [chartType]="hoursChartType"
+                                [chartData]="hoursChartData" [chartOptions]="hoursChartOptions" [chartResponsive]="hoursChartResponsive"
+                                [withHr]="true">
+                            </lbd-chart>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <strong>Tabtitel 3</strong>
+                            <small>Een beetje uitleg hier</small>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <img src="../../assets/img/grafiek1.jpg">
+                        </ng-template>
+                    </ngb-tab>
+                </ngb-tabset>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="row-title">Vee</h2>
+            <!-- </div>
+            <div class="col-md-6">
+                <lbd-chart [title]="'Overzicht vee'" [subtitle]="'24 Hours performance'" [chartType]="hoursChartType"
+                    [chartData]="hoursChartData" [chartOptions]="hoursChartOptions" [chartResponsive]="hoursChartResponsive"
+                    [legendItems]="hoursChartLegendItems" [withHr]="true" [footerIconClass]="'fa fa-history'"
+                    [footerText]="'Updated 3 minutes ago'">
+                </lbd-chart>
+            </div>
+            <div class="col-md-6"> -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Melkveebedrijf</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Gemengd varkensbedrijf</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Rijpaarden</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card add-new-card">
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Nieuwe blok</h4>
+                            </div>
+                            <div class="content">
+                                <p class="description">Klik hier om een blok toe te voegen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="row-title">Teelten</h2>
+            <!-- </div>
+            <div class="col-md-4">
+                <lbd-chart [title]="'Overzicht teelten'" [subtitle]="'All products including Taxes'" [chartType]="activityChartType"
+                    [chartData]="activityChartData" [chartOptions]="activityChartOptions" [chartResponsive]="activityChartResponsive"
+                    [legendItems]="activityChartLegendItems" [withHr]="true" [footerIconClass]="'fa fa-check'"
+                    [footerText]="'Data information certified'">
+                </lbd-chart>
+            </div>
+            <div class="col-md-8"> -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Weiden</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Grasland</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Voederbieten</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Eiwitrijk ruwvoeder</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Grasland</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Weiden</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Grasland</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Eiwitrijk ruwvoeder</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Weiden</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Voederbieten</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <!-- <div class="image"><img src="assets/img/koeien.jpg" alt="..."/></div> -->
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Voederbieten</h4>
+                                <div class="dropdown pull-right">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="pe-7s-config"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Details</a></li>
+                                        <li><a href="#">Beheer</a></li>
+                                        <li><a href="#">Verwijder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="in-uit">
+                                    <div class="in"><span class="badge badge-success">In</span> <span class="amount in">€ 12.345,40</span></div>
+                                    <div class="uit"><span class="badge badge-warning">Uit</span> <span class="amount out">€ 12.345,40</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card add-new-card">
+                            <div class="header clearfix">
+                                <h4 class="title pull-left">Nieuwe blok</h4>
+                            </div>
+                            <div class="content">
+                                <p class="description">Klik hier om een blok toe te voegen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
